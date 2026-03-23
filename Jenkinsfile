@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                echo 'Checking out source code'
+                git branch: 'main', url: https://github.com/MADHU8912/empty-build-project.git
             }
         }
 
@@ -31,3 +31,4 @@ pipeline {
         }
     }
 }
+            
