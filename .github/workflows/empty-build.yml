@@ -2,8 +2,7 @@ name: Empty Build
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
@@ -11,12 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout Code
         uses: actions/checkout@v4
 
-      - name: Show message
+      - name: Show Message
         run: echo "Empty GitHub Actions build successful"
 
-      - name: List files
+      - name: List Files
         run: ls
-        
