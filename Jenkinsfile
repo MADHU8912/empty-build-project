@@ -2,21 +2,15 @@ pipeline {
     agent any
 
     stages {
-        stage('Checkout') {
-            steps {
-                git branch: 'main', url: 'https://github.com/YOUR_USERNAME/empty-build-project.git'
-            }
-        }
-
         stage('Check Files') {
             steps {
-                sh 'dir'
+                bat 'dir'
             }
         }
 
         stage('Empty Build') {
             steps {
-                sh 'echo Empty build success'
+                bat 'echo Empty build success'
             }
         }
     }
