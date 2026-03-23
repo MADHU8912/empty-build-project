@@ -10,24 +10,14 @@ pipeline {
 
         stage('Check Files') {
             steps {
-                bat 'dir'
+                sh 'ls'
             }
         }
 
         stage('Empty Build') {
             steps {
-                bat 'echo Empty Jenkins build successful > build-report.txt'
-                bat 'type build-report.txt'
+                sh 'echo Empty build success'
             }
-        }
-    }
-
-    post {
-        success {
-            echo 'Pipeline completed successfully'
-        }
-        failure {
-            echo 'Pipeline failed'
         }
     }
 }
