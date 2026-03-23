@@ -10,7 +10,7 @@ pipeline {
 
         stage('Check Files') {
             steps {
-                sh 'ls'
+                sh 'dir'
             }
         }
 
