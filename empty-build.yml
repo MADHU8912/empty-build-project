@@ -17,4 +17,4 @@ jobs:
         run: echo "Empty GitHub Actions build successful"
 
       - name: List Files
-        run: ls
+        run: dir
