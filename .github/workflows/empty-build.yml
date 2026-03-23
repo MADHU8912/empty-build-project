@@ -1,21 +1,3 @@
-name: Empty Build
-
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
-
-jobs:
-  empty-job:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Show message
-        run: echo "Empty GitHub Actions build successful"
-
-      - name: List files
-        run: ls
+- Checkout code
+- echo "Empty build"
+- ls
